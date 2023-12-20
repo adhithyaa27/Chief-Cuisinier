@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;1,700&family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;1,300;1,400;1,700&family=Days+One&family=Krona+One&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1faee;
+}
+.sidenav {
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(75, 75, 75);
+  overflow-x: hidden;
+  text-align: center;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+#content > div {
+  padding: 10% 0;
+}
+
+#discription1{
+  font-family: 'Comic Neue', cursive;
+  font-weight:1000;
+  font-size: 40px;
+}
+#discription2{
+  font-family: 'Comic Neue', cursive;
+  color: white;
+}
+
+#search > input {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-size: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;  
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Tourney", sans-serif;
+  font-weight: 400;
+  line-height: normal;
+}
+#search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+::placeholder {
+  color: grey;
+}
+.main {
+  height: 100%;
+  width: 70%;
+  margin-left: 25%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(144, 152, 153);
+  text-align: center;
+  overflow: scroll;
+}
+#header {
+  
+  text-align: center;
+  margin: 15px 17px;
+  border-radius: 50px;
+  font-size: 30px;
+  font-family: 'Comic Neue', cursive;
+  font-family: 'Days One', sans-serif;
+  font-family: 'Krona One', sans-serif;
+  color: white;
+
+}
+#dayFood {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#imageContainer {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+#imageContainer > img {
+  width: 78%;
+  height: 78%;
+  border-radius: 50%;
+}
+#food-slide {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+#food-name {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+  margin: 15px 17px;
+  border-radius: 50px;
+  font-size: 30px;
+  font-family: 'Comic Neue', cursive;
+
+}
+#search_icons {
+  padding: 10px;
+}
+#search_heading {
+  display: inline-block;
+  justify-content: left;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  margin: 15px 17px;
+  border-radius: 50px;
+  font-size: 30px;
+  font-family: 'Comic Neue', cursive;
+  font-family: 'Days One', sans-serif;
+  font-family: 'Krona One', sans-serif;
+  color: white;
+}
+#results_contents {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.imageDock {
+  display: inline-block;
+  padding: 20px;
+  
+  border-radius: 15px;
+}
+.imageDock > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.foodName {
+  display: inline-block;
+  text-align: center;
+  padding: 0 20px;
+  margin: 15px 17px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-family: 'Comic Neue', cursive;
+
+}
+#ingredient {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px) {
+  .sidenav {
+    height: 20%;
+    width: 100%;
+    position: relative;
+  }
+  #content > div {
+    padding: 2% 0 0 0;
+  }
+  .main {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  #header {
+    font-size: large;
+  }
+  #results_contents {
+    grid-template-columns: auto auto;
+  }
+  #search_heading {
+    font-size: large;
+  }
+  .foodName {
+    font-size: large;
+  }
+  #imageContainer > img {
+    width: 250px;
+  }
+}

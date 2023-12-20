@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="sidenav">
+      <div id="content">
+        <div id="logo"><img src="./assets/logo.png" alt=""></div>
+        <div id="discription1">Welcome to Chief Cuisinier</div>
+        <div id="discription2">
+          Chief Cuisinier is your go-to destination for delectable recipes. 
+          Explore a culinary adventure with mouthwatering delights randomly presented. 
+          Join the food fest and savor the joy of diverse flavors!
+        </div>
+        <div id="search">
+          <input id="input_field" type="text" placeholder="Search" />
+          <i id="search_icons" class="material-icons">search</i>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div id="header">TODAY'S HIGHLIGHT</div>
+      <div id="dayFood"></div>
+      <div id="search_result"></div>
+    </div>
+
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-display-topright w3-padding-large"
+            >&times;</span
+          >
+          <h2>Ingredients to Cook</h2>
+        </header>
+        <div id="ingredients" class="w3-container"></div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
